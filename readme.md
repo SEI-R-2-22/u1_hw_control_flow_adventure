@@ -52,13 +52,15 @@ How about...
    * A Lord of the Rings style adventure where the player is Frodo, and he must choose how to get to Mordor. Possible obstacles involve Orcs, Goblins and getting drunk on mead.
    * A "Top Chef" style cooking adventure where the player is the chef, trying to make dinner for an elite group of judges. Possible obstacles include overcooking the meal, running out of time or mean judges.
    * A Harry Potter themed adventure where the user is Harry and he must find all the horcruxes. Possible obstacles include He-who-must-not-be-named, Professor Snape or Ron being completely useless.
+   
+![Delorian](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F7TZvWKVkm0xXi%2Fgiphy.gif&f=1&nofb=1)
 
 ### Pseudo-coded Example
 
 What is your name?
-* `Sean`
+* `Marty`
 
-Nice to meet you, `Sean`. What year would you like to go to? **(YYYY)**
+Nice to meet you, `Marty`. What year would you like to go to? **(YYYY)**
 * `>= 2015`
     * I see you're a fan of Back to the Future 2. Would you rather deal with Biff, or Griff? **(B/G)**
         * `B`iff
