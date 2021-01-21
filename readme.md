@@ -1,22 +1,23 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)  SOFTWARE ENGINEERING IMMERSIVE
-
 # Choose Your Own Adventure!
 
-Using what you know about data types, variables, operators, conditional blocks, and accepting user input, create a text-based game that allows the user to arrive at different "destinations" based on the inputs they type.
+![Choose](https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimages.huffingtonpost.com%2F2016-05-09-1462761733-5966723-chooseyourown.jpg&f=1&nofb=1)
+
+## Homework Overview
+Using what you know about data types, variables, operators, conditional blocks, and accepting user input, you'll be creating a text-based game that allows the user to arrive at different "destinations" based on the inputs they type.
 
 ### Rules
 * Any path the user goes down must ask them at least **three** questions.
 * There must be a minimum of **seven** total destinations the user could arrive at based on their responses.
-* For **at least one** of the questions asked, there must be **more than two possible user responses**.
-* Your adventure must offer the user an option to replay at the end.
-* Your code must contain **at least one switch statement**
+* For **at least one** of the questions asked, there must be **more than two** possible user responses.
+* Your adventure must offer the user an option to **replay** at the end.
+* Your code must contain **at least one switch statement**.
 * Your code must make use of **both string and number user inputs**.
 
 > **Hint:** You may need `parseInt()` and `toString()`
 
-## How to Get User Input
+### How to Get User Input
 
-### `prompt()`
+#### `prompt()`
 
 At any point in our JS code, if we write `prompt()`, a pop up box will open in our browser for a user to enter in text. The `prompt()` function returns the string entered into the pop up.
 
@@ -39,17 +40,18 @@ alert("You are " + age + " years old.")
 
 Whatever we type into the textbox in the window that prompt() brings up, is returned by prompt to the variable age.
 
-### `confirm()`
+#### `confirm()`
 
 Like `prompt()`, confirm opens a pop-up but instead of a text input field, the pop up has two buttons, **ok** and **cancel**. If the user selects **ok**, `confirm()` returns `true` (and otherwise returns `false`). Also like prompt, `confirm()` also takes a string that will be displayed to the user in the pop up.
 
+![Pass](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FnjYrp176NQsHS%2Fgiphy-downsized-large.gif&f=1&nofb=1)
 
 ### Need Some Inspiration?
 
 How about...
-* A Lord of the Rings style adventure where the player is Frodo, and he must choose how to get to Mordor. Possible obstacles involve Orcs, Goblins and getting drunk on mead.
-* A "Top Chef" style cooking adventure where the player is the chef, trying to make dinner for an elite group of judges. Possible obstacles include overcooking the meal, running out of time or mean judges.
-* A Harry Potter themed adventure where the user is Harry and he must find all the horcruxes. Possible obstacles include He-who-must-not-be-named, Professor Snape or Ron being completely useless.
+   * A Lord of the Rings style adventure where the player is Frodo, and he must choose how to get to Mordor. Possible obstacles involve Orcs, Goblins and getting drunk on mead.
+   * A "Top Chef" style cooking adventure where the player is the chef, trying to make dinner for an elite group of judges. Possible obstacles include overcooking the meal, running out of time or mean judges.
+   * A Harry Potter themed adventure where the user is Harry and he must find all the horcruxes. Possible obstacles include He-who-must-not-be-named, Professor Snape or Ron being completely useless.
 
 ### Pseudo-coded Example
 
@@ -95,3 +97,13 @@ Nice to meet you, `Sean`. What year would you like to go to? **(YYYY)**
                     * Interesting choice. Unfortunately the Doc can't grab Clara and get back to the car in time. He ends up staying in 1855 with her.
                 * `L`eave her
                     * Smart choice. Unfortunately the Doc was deeply in love with Clara, and when he gets back to 1985 he becomes very depressed.
+                    
+![Doc](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fhn45V8hBhRIpW%2Fgiphy.gif&f=1&nofb=1)
+
+## Submission Guidelines
+   - PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-1-25/Pull-Request-Template)
+
+## Resources
+   - [Data Types](https://github.com/SEI-R-1-25/u1_lesson_js_data_types)
+   - [Arrays](https://github.com/SEI-R-1-25/u1_lesson_js_arrays)
+   - [Control Flow Lesson](https://github.com/SEI-R-1-25/u1_lesson_loops_and_control_flow)
