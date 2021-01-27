@@ -46,7 +46,7 @@ Like `prompt()`, confirm opens a pop-up but instead of a text input field, the p
 
 ![Pass](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FnjYrp176NQsHS%2Fgiphy-downsized-large.gif&f=1&nofb=1)
 
-...this course (jk)
+...this homework (jk)
 
 ### Need Some Inspiration?
 
