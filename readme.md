@@ -44,7 +44,8 @@ Whatever we type into the textbox in the window that prompt() brings up, is retu
 
 Like `prompt()`, confirm opens a pop-up but instead of a text input field, the pop up has two buttons, **ok** and **cancel**. If the user selects **ok**, `confirm()` returns `true` (and otherwise returns `false`). Also like prompt, `confirm()` also takes a string that will be displayed to the user in the pop up.
 
-![Pass](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FnjYrp176NQsHS%2Fgiphy-downsized-large.gif&f=1&nofb=1)this course (jk)
+![Pass](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2FnjYrp176NQsHS%2Fgiphy-downsized-large.gif&f=1&nofb=1)
+...this course (jk)
 
 ### Need Some Inspiration?
 
