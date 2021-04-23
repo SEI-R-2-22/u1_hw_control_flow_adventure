@@ -108,6 +108,6 @@ Nice to meet you, `Marty`. What year would you like to go to? **(YYYY)**
    - PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-1-25/Pull-Request-Template)
 
 ## Resources
-   - [Data Types](https://github.com/SEI-R-1-25/u1_lesson_js_data_types)
-   - [Arrays](https://github.com/SEI-R-1-25/u1_lesson_js_arrays)
-   - [Control Flow Lesson](https://github.com/SEI-R-1-25/u1_lesson_loops_and_control_flow)
+   - [Data Types](https://github.com/SEI-R-4-26/u1_lesson_js_data_types)
+   - [Arrays](https://github.com/SEI-R-4-26/u1_lesson_js_arrays)
+   - [Control Flow Lesson](https://github.com/SEI-R-4-26/u1_lesson_loops_and_control_flow)
