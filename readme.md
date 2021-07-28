@@ -110,9 +110,4 @@ Nice to meet you, `Marty`. What year would you like to go to? **(YYYY)**
 ![Doc](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2Fhn45V8hBhRIpW%2Fgiphy.gif&f=1&nofb=1)
 
 ## Submission Guidelines
-   - PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-1-25/Pull-Request-Template)
-
-## Resources
-   - [Data Types](https://github.com/SEI-R-4-26/u1_lesson_js_data_types)
-   - [Arrays](https://github.com/SEI-R-4-26/u1_lesson_js_arrays)
-   - [Control Flow Lesson](https://github.com/SEI-R-4-26/u1_lesson_loops_and_control_flow)
+   - PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-7-26/Pull-Request-Template)
