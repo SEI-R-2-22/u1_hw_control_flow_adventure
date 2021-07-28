@@ -19,7 +19,7 @@ Using what you know about data types, variables, operators, conditional blocks, 
 * `Fork` and `Clone` this repository
 * `cd` into the directory
 * Run the command `code .` to open it in VS Code.
-* Start by creating an `index.js` file with the `touch` command
+* Start by looking at the starter files in the `starter` directory
 
 ### How to Get User Input
 
