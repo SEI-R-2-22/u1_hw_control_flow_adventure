@@ -15,6 +15,11 @@ Using what you know about data types, variables, operators, conditional blocks, 
 
 > **Hint:** You may need `parseInt()` and `toString()`
 
+### Getting Started
+* `Fork` and `Clone` this repository
+* `cd` into the directory
+* Run the command `code .` to open it in VS Code.
+
 ### How to Get User Input
 
 #### `prompt()`
