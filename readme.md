@@ -128,4 +128,4 @@ Nice to meet you, `Marty`. What year would you like to go to? **(YYYY)**
 
 ## Submission Guidelines
 
-- PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-11-8/Pull-Request-Template)
+- PR must be submitted utilizing these guidelines: [PR Guidelines](https://github.com/SEI-R-11-8/template_pull_request)
