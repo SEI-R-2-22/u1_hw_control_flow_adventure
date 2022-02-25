@@ -83,8 +83,6 @@ while (storyContinuation === true){
                 }
             }
         }
-        
-        
 
 
     } else if (path === 2){
@@ -117,7 +115,7 @@ while (storyContinuation === true){
                 alert("The magical wall asked to guess a random number from 1 to 6, and if you guess what number the magical wall is thinking, the magical wall will crumble and you win the adventure game!");
                 alert("However, if you guess wrong, you lose the adventure game!");
                 alert("You thought to yourself that it's an unfair percentage of winning, but hey... you were the one who chose path 2");
-                alert(`You guessed the number ${Number} and the magical wall revealed his number to be ` + 3);
+                alert(`You guessed the number ${Number} and the magical wall revealed it's number to be ` + 3);
                 if (Number !== 3){
                     gameFailureEnd();
                     answer = prompt("Would you like to restart the game?(Y/N)")
@@ -180,7 +178,7 @@ while (storyContinuation === true){
                             break;
                         }
                 } else {
-                    alert("You declined his offer and instead walk around him, like how you walk around the previous obstacles, and try to find a way out yourself." 
+                    alert("You declined his offer and instead walk around him, like how you walked around the previous obstacles, and try to find a way out yourself." 
                     + " You can hear him behind you laugh, and as you turned around, he disappeared. Weeks, no, maybe months has passed by and you have yet to find yourself a way out of the forest. You realized that maybe you should’ve played that game with the strange man.");
                     gameFailureEnd();
                     answer = prompt("Would you like to restart the game?(Y/N)")
