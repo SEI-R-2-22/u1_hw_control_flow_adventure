@@ -8,7 +8,7 @@ const embark = () => {
   if (numericAge < 2) {
     alert("You're just an infant!")
     let flavor = prompt(
-      'It is time to bake your very first birthday cake! Do you prefer rice pudding (R), mashed peas (P), or chocolate (C)?'
+      'It is time to bake your very first birthday cake! Do you prefer rice pudding (R), mashed peas (P), or chocolate (C) filling?'
     )
     while (flavor !== 'R' && flavor !== 'P' && flavor !== 'C') {
       flavor = prompt(
@@ -23,10 +23,10 @@ const embark = () => {
         break
       case 'P':
         const peasPreference = prompt(
-          'Ew, mashed peas! Do you prefer regular homegrown peas (R) or sugarsnap peas? (S)'
+          'Ew, mashed peas! Do you prefer regular homegrown peas (R) or sugarsnap peas (S)?'
         )
         if (peasPreference === 'R') {
-          alert('Head to your backyard garden!')
+          alert('Head to your backyard garden to harvest some homegrown peas!')
         } else if (peasPreference === 'S') {
           alert("Head to your local farm's vegetable patch!")
         }
@@ -36,7 +36,7 @@ const embark = () => {
           'Do you prefer milk chocolate (M) or dark chocolate (D)?'
         )
         if (chocolateChoice === 'M') {
-          alert("Ok, buy some Hershey's chocolate for the cake!")
+          alert("Ok, buy some sweet Hershey's chocolate for the cake!")
         } else if (chocolateChoice === 'D') {
           alert('Ok, buy some bittersweet Godiva chocolate for the cake!')
         }
@@ -52,7 +52,7 @@ const embark = () => {
       'It is time to pick party favors for your guests. Do you prefer toys (T) or books (B)?'
     )
     while (partyFavor !== 'T' && partyFavor !== 'B') {
-      partyFavor = prompt('Please type T for toys or B for books!')
+      partyFavor = prompt('Please type T for toys or B for books.')
     }
     if (partyFavor === 'T') {
       let toyChoice = prompt(
@@ -67,14 +67,12 @@ const embark = () => {
       }
     } else if (partyFavor === 'B') {
       let bookChoice = prompt(
-        'Do you prefer to read Clifford (C) or Paddington (P)?'
+        'Do you prefer to read The Canterbury Tales (C) or Paddington (P)?'
       )
       if (bookChoice === 'C') {
-        alert(
-          'Unfortunately you are too young for Clifford. You will get upset since he runs away.'
-        )
+        alert('Unfortunately, you are too young for Chaucer.')
       } else if (bookChoice === 'P') {
-        alert('Paddington gets lost easily. You can help him find his way!')
+        alert('A childhood classic!')
       }
     }
   } else if (numericAge > 15) {
