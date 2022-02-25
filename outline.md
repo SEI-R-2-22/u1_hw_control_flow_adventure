@@ -12,6 +12,7 @@
 
 - Name (prompt)
 - "Hello [name]. What a handsome wolf you are. You are walking along a road when your tummy starts rumbling. Up ahead you see 3 houses. Which do you visit?
+
   - Straw
     - Cute house. You can see a delicious piggy inside through the little window. What do you do?
       - [H]uff, puff and blow
@@ -23,7 +24,7 @@
           - [F]ib. 
             - "It's Red Riging Hood! I brought snacks from Grandmother's house!"
             - "That's not Red's voice!" cries the piggy. It scarpers out the back and escapes. Nice try.
-          - [T]ell the Truth: "It' the big bad wolf, and I would like to eat you, please!"
+          - [T]ell the Truth: "It's the big bad wolf, and I would like to eat you, please!"
             - Predictably, the piggy is not excited to see you. "Aaahhh!" It yells, as it runs out the back, and escapes. No dinner for you. 
           - [C]andy gram.
             - "What?" the piggy says. It opens the door. You gobble it up. I cannot believe that worked. 
@@ -52,7 +53,7 @@
               - [4]th little piggy, who had none.
               - [5]th little piggy, who went 'wee wee wee wee' all the way home.
               - (All others) "You liar! I'M that little piggy! You're the wolf, aren't you?" The piggy runs out the back an escapes. You're a terrible liar. 
-          - [T]ell the Truth: "It' the big bad wolf, and I would like to eat you, please!"
+          - [T]ell the Truth: You reply: "It's the big bad wolf, and I would like to eat you, please!"
             - The door is flung open, but you find yourself staring down the barrel of a rifle. What is this, Animal Farm?! "You have 5 seconds..." the piggy begins, but you don't wait around to find out what for. This did not go how you planned. Apparently no dinner for you. 
           - [L]and-Shark.
             - "That's an old reference," says the piggy. It escapes out the back before you have time to say "Candy gram." Bummer.       
