@@ -67,7 +67,7 @@ const mountainChoice = (playerChoice) => {
       "You hike for what feels like an hour when you see a massive village built into the treetops.  You notice it is oddly quiet.  Where are all the people?  You walk close to the village and see a basket attached to a fancy rope and pulley mechanism.  The ropes lead to a platform area above. Type '1' to get in the basket and try to make this work. Type '2' if you think it's too dangerous."
     );
     playerChoice = parseInt(playerChoice);
-    secondChoice(playerChoice);
+    villageChoice(playerChoice);
   } else if (playerChoice === 2) {
     let playerChoice = prompt(
       "The clouds captivate you as they swirl around nearby peaks.  You try to keep an eye on clouds heading towards you, but as they get close they become too nebulous to make out. You hear a bird call, close, and turn too quickly.  You reach out a hand to steady yourself but nothing meets it. You tumble. You die. The End. Type anything to start again."
@@ -79,9 +79,9 @@ const mountainChoice = (playerChoice) => {
 const villageChoice = (playerChoice) => {
   if (playerChoice === 1) {
     let playerChoice = prompt(
-      "The pulley mechanism is well made, it takes you little effort to pull yourself up to the platform. Type '1' to explore the village. Type '2' to take a breather. Type '3' to yell for someone."
+      "The pulley mechanism is well made, it takes you little effort to pull yourself up to the platform. Type 'Explore' to explore the village. Type 'Breathe' to take a breather. Type 'Yell' to yell for someone."
     );
-    playerChoice = parseInt(playerChoice);
+    playerChoice = playerChoice.toLowerCase();
     finalChoice(playerChoice);
   } else if (playerChoice === 2) {
     let playerChoice = prompt(
@@ -91,6 +91,29 @@ const villageChoice = (playerChoice) => {
   }
 };
 
+const finalChoice = (playerChoice) => {
+  // console.log(playerChoice);
+  switch (playerChoice) {
+    case "explore":
+      playerChoice = prompt(
+        "One of the first rooms you come across is unlocked and has a comically large bed.  You decide to give it a shot.  You jump in the air and as you land on the blankets you wake up at home, in your own bed. The End. Type anything to start again."
+      );
+      location.reload();
+      break;
+    case "breathe":
+      playerChoice = prompt(
+        "You’re feeling so tired today.  After resting for 5 minutes a door appears before you.  An elephant walks through the door in a tizzy but stops dead in his tracks when he sees you.  He does a double-triple-quadruple take between you in the village, and you through the door he just came from.  While he does so, the fabric of reality comes undone and all things cease to exist.  The End. Type anything to start again."
+      );
+      location.reload();
+      break;
+    case "yell":
+      playerChoice = prompt(
+        "“Anyone home?’  You get no answer.  “Hello!?!?!”  You repeat yourself in this fashion for a minute when you hear people approaching.  You head towards the source and show your hands hoping they’re not sticklers about trespassing.  Turns out they aren’t, they’re pretty chill.  They ask you to stay for dinner every night for the rest of your life.  You do.  The End. Type anything to start again."
+      );
+      location.reload();
+      break;
+  }
+};
 const gameBegins = () => {
   let playerChoice = prompt(
     "You awake in what feels like a comfortable chair.  Your eyes seem to be failing you; you can’t see a thing! Something brushes across your face as you look around.  At first you are startled, but when you grasp the object you realize it’s a string hanging from above. Type '1' to pull the string.  Type '2' to do nothing."
