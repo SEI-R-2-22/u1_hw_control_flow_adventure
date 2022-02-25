@@ -75,7 +75,7 @@ const dungeonCrawler = () => {
       dungeonCrawlerTwo()
     } else if (action === 'b') {
       alert(
-        'You hold up your shield and brace yourself.  You feel the skeletons hands bass against your shield.  In the next instant, you push forward with all of your might bashing the skeleton in the skull with your shield.  They stumble backwards leaving you an opening to attack.  You take the chance and fell the skeleton with one swing of your sword.'
+        'You hold up your shield and brace yourself.  You feel the skeletons hands beat against your shield.  In the next instant, you push forward with all of your might bashing the skeleton in the skull with your shield.  They stumble backwards leaving you an opening to attack.  You take the chance and fell the skeleton with one swing of your sword.'
       )
       dungeonCrawlerTwo()
     } else if (action === 'c') {
@@ -225,13 +225,14 @@ const fastDriver = () => {
         fuel -= 5
       }
       compDistance = compDistance + Math.floor(Math.random() * 10)
+      console.log(compDistance)
       laps--
     }
-    if (fuel === 0) {
+    if (fuel <= 0) {
       alert('You ran out of fuel!  You lose!')
       endGame()
     } else if (userDistance > compDistance) {
-      alert(`Congratulations ${name}, you wont the race!  Nice driving!`)
+      alert(`Congratulations ${name}, you won the race!  Nice driving!`)
       endGame()
     } else if (userDistance < compDistance) {
       alert('You lost.  Better luck next time.')
