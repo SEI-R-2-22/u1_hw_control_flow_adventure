@@ -23,7 +23,7 @@ const grondQuote = `The drums rolled louder. Fires leaped up. Great engines craw
 ...The drums rolled and rattled. With a vast rush Grond was hurled forward by huge hands. It reached the Gate. It swung. A deep boom rumbled through the City like thunder running in the clouds.`;
 
 const tryAgain = () => {
-  const y = confirm(`Would you like to try again?`);
+  const y = confirm(`You have failed to eat the little pig. Would you like to try again?`);
   if (y) {
     fromTheBeginning();
   } 
@@ -88,7 +88,8 @@ const fromTheBeginning = () => {
         
         "That's not Red's voice!" they cry. "You're ${user} the wolf! She told me all about you!" The little pig scarpers out the back and escapes. 
         
-        Nice try. Better luck next time.`); // END CONDITION
+        Nice try. Better luck next time.`);
+        tryAgain(); ////// END CONDITION !!
       } 
       
       // STRAW > KNOCK > TRUTH
@@ -97,7 +98,8 @@ const fromTheBeginning = () => {
         
         Predictably, the little pig is not terribly excited to see you. It yells "Aaahhh!" as it runs out the back, and escapes. 
         
-        No dinner for you. `); //// END CONDITION.
+        No dinner for you. `); 
+        tryAgain(); ////// END CONDITION !!
       }
       // STRAW > KNOCK > LANDSHARK
       else if (knockResponse.toLowerCase() == "s") {
@@ -125,7 +127,8 @@ const fromTheBeginning = () => {
       else {
         alert(`It rings and rings, but no one answers. Maybe you got the wrong number? Maybe they're screening their calls? Either way, you've wasted too much time. The little pig spotted you and vamoosed. 
         
-        Better luck next time.`); // END CONDITION !!
+        Better luck next time.`); 
+        tryAgain(); ////// END CONDITION !!
       }
     }
 
@@ -150,17 +153,19 @@ const fromTheBeginning = () => {
         
         Meanwhile, all that huffing and puffing has alerted the little pig to your presense, and it escapes out the back door. Drat. 
         
-        Better luck next time.`); ////// END CONDITION !!
+        Better luck next time.`); 
+        tryAgain(); ////// END CONDITION !!
       }
       else if (parseInt(huffPuffCount) == 2) {
         alert(`Success! With a tremendous breath, you are able to topple the house of sticks. 
         
-        You easily extract the piggy from the kindling that was once its house, and gobble it up. Yum!`);  ////// END CONDITION !!
+        You easily extract the piggy from the kindling that was once its house, and gobble it up. Yum!`);  ////// WIN CONDITION !!
       }
       else if (parseInt(huffPuffCount) >= 3) {
         alert(`Overkill much? You blow the house down, but your lungs aren't what they used to be, so you also hyperventilate. The piggy escapes while you catch your breath. 
         
-        Better luck next time.`); ////// END CONDITION !!
+        Better luck next time.`); 
+        tryAgain(); ////// END CONDITION !!
       }
     } 
     
@@ -198,13 +203,15 @@ const fromTheBeginning = () => {
             else {
               alert(`"Well then get off my lawn!" A frying pan is thrown from the window with surprising accuracy. You run away, tail literally between your legs. 
             
-            Better luck next time. `); /// END CONDITION
+            Better luck next time. `); 
+            tryAgain(); ////// END CONDITION !!
             }
             break;
           default :
             alert(`"You liar!" cries the pig, "I'M that little piggy! You're ${user} the wolf, aren't you?" The little pig squeals and escapes out the back door. 
             
-            You're a terrible liar. Better luck next time.`); /// END CONDITION
+            You're a terrible liar. Better luck next time.`); 
+            tryAgain(); ////// END CONDITION !!
         }
       } 
       
@@ -214,14 +221,17 @@ const fromTheBeginning = () => {
           
         The door is flung open, but you find yourself staring down the barrel of a rifle. What is this, Animal Farm?! "You have 5 seconds..." the little pig begins, but you don't wait around to find out what for. 
         
-        This did not go how you planned. Apparently no dinner for you.`); //// END CONDITION.
+        This did not go how you planned. Apparently no dinner for you.`); 
+        tryAgain(); ////// END CONDITION !!
       }
 
       // STICKS > KNOCK > LANDSHARK
       else if (knockResponse.toLowerCase() == "s") {
         alert(`"Wow, that's an old reference," says the little pig. "Way to date yourself, boomer." It escapes out the back before you have time to say "Candy gram." 
         
-        Bummer. Better luck next time.`); // END CONDITION
+        Bummer. Better luck next time.`);
+        tryAgain(); ////// END CONDITION !!
+
       } else alert("sorry, something went wrong.");
 
     } 
@@ -240,7 +250,8 @@ const fromTheBeginning = () => {
       else {
         alert(`It rings and rings, but no one answers. Maybe you got the wrong number? Maybe they're screening their calls? Either way, you've wasted too much time. The little pig spotted you and vamoosed. 
         
-        Better luck next time.`); // END CONDITION !!
+        Better luck next time.`);
+        tryAgain(); ////// END CONDITION !!
       }
 
     } else alert("sorry, that wasn't an option.");
@@ -261,12 +272,14 @@ const fromTheBeginning = () => {
       if (parseInt(huffPuffCount) < 3) {
         alert(`Well obviously you don't blow down the freakin' castle. Plus, all this huffing and puffing has alerted Baron von Pig. And... their archers. Crap.
         
-        You high-tail it out of there. Better luck next time.`); ////// END CONDITION !!
+        You high-tail it out of there. Better luck next time.`); 
+        tryAgain(); ////// END CONDITION !!
       }
       else if (parseInt(huffPuffCount) >= 3) {
         alert(`What were you thinking? Obviously you don't blow down the freakin' castle, AND you also hyperventilate. The little pig laughs at you from the gatehouse, while their guards come to collect your sorry self. I'm sure you'll have a lovely future as a throw rug or something.
         
-        Let's pretend this didn't happen.`); ////// END CONDITION !!
+        Let's pretend this didn't happen.`); 
+        tryAgain(); ////// END CONDITION !!
       }
       
     } 
@@ -285,7 +298,8 @@ const fromTheBeginning = () => {
               
         "Ha," the little pig laughs. "Nice try, but the castle inspector was here LAST week. Good thing, too, otherwise I would never have gotten my flaming arrow turrets back into working condition! Wanna see?" 
         
-        That doesn't sound good...`);  /// END CONDITION
+        That doesn't sound good...`);  
+        tryAgain(); ////// END CONDITION !!
       } 
       
       // BRICK > KNOCK > TRUTH
@@ -307,7 +321,8 @@ const fromTheBeginning = () => {
             
             "Suit yourself," says the little pig. "Archers, ready!"
             
-            Uh oh. `);          //// END CONDITION.
+            Uh oh. `);          
+            tryAgain(); ////// END CONDITION !!
 
           }
       }
@@ -315,7 +330,8 @@ const fromTheBeginning = () => {
       else if (knockResponse.toLowerCase() == "s") {
         alert(`"Wow, that's an old reference," says the little pig. "Way to date yourself, boomer. Why don't you leave comedy to millenials?"  
         
-        Bummer. Better luck next time.`); // END CONDITION    
+        Bummer. Better luck next time.`);
+        tryAgain(); ////// END CONDITION !!    
       } else alert("sorry, something went wrong.");
 
     } 
@@ -341,7 +357,8 @@ const fromTheBeginning = () => {
       else {
         alert(`It rings and rings, but no one answers. Maybe you got the wrong number? Maybe they're screening their calls? Either way, you've wasted too much time. The little pig spotted you, and their guards were able to capture you and throw you in the dungeon. 
         
-        Maybe for the next adventure you have to escape the dungeon, but for now. Game over. Better luck next time.`); // END CONDITION !!
+        Maybe for the next adventure you have to escape the dungeon, but for now. Game over. Better luck next time.`);
+        tryAgain(); ////// END CONDITION !!
       }
     } else alert("sorry, that wasn't an option.");
 
