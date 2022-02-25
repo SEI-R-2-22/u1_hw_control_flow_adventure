@@ -1,8 +1,8 @@
-const threeBody  = confirm(`LOCATION: EARTH. Welcome to Three Body. Press OK to don your virtual reality suit. Press cancel to quit the game.`) 
+const threeBody  = confirm(`LOCATION: EARTH. Welcome to Three Body. Press OK to don your virtual reality suit. Press cancel to read the backstory first.`) 
 
     switch(threeBody) {
         case true:
-            let trisolaris = confirm(`LOCATION: TRISOLARIS. Arrive in red desert. Weather event - chaotic era - cold/hot. Assist Trisolarans with predicting their chaotic eras?`)
+            let trisolaris = confirm(`LOCATION: TRISOLARIS - Planet orbiting Alpha Centauri. Arrive in red desert. Violet unpredictable weather events result in 'Chaotic Eras'- continual destruction and rebuilding of Trisolaran society. Assist Trisolarans with predicting their chaotic eras?`)
                 if (trisolaris === true) {
                     alert(`FAILURE. Trisolaran society thrives under your assistance and they enslave Earth much faster than we can respond. You are branded as a traitor. Press OK to play again.`)      
                     window.location.reload();
@@ -39,16 +39,13 @@ const threeBody  = confirm(`LOCATION: EARTH. Welcome to Three Body. Press OK to 
                                                         if (pocketUniverse === true) {
                                                             alert(`SUCCESS. You join the dying universe, but leave behind a message for the reborn universe to discover. THE END.`)
                                                         } else {
-                                                            let number = prompt(`FAILURE. Enter a random number.`)
+                                                            let number = parseInt(prompt(`FAILURE. Enter a random number.`))
                                                                 confirm(`You live ${number} years and die peacefully. The universe descends into eternal darkness. Press OK to play again.`)
                                                                 window.location.reload();   
                                                         }  
-                                                } else {
-                                                    console.log(test);
+                                               
                                                 }
-                                        } else {
-                                            console.log(test);
-                                        }
+                                        } 
                                               
                 
                                 }
@@ -64,37 +61,7 @@ const threeBody  = confirm(`LOCATION: EARTH. Welcome to Three Body. Press OK to 
 
 
 
-// const trisolaris  = confirm() {
-    
-// }
 
-// const pCD  = confirm() {
-    
-// }
-
-
-// const futureEarth  = confirm() {
-    
-// }
-
-
-// const space  = confirm() {
-    
-// }
-
-
-// const mercury  = confirm() {
-    
-// }
-
-
-// const armageddon  = confirm() {
-    
-// }
-
-// const blackHole = confirm() {
-
-// }
 
 
 
