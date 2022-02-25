@@ -1,1 +1,172 @@
+// let playerName = prompt('Choose your own adventure! Please enter your name')
+// alert(`Welcome to the dungeon, ${playerName}`)
 
+// let enter = parseInt(
+//   prompt(
+//     'You enter the dungeon and see three doors. Which one will you enter? Door 1 seems dark. Door 2 smells damp. Door 3 smells fresh. (1/2/3)'
+//   ),
+//   10
+// )
+// switch (enter) {
+//   case 1:
+//     if (
+//       confirm(
+//         'You enter the dark room. You are attacked in the dark and hurt. Do you drink your healing potion? (Ok for yes/Cancel for no)'
+//       ) === true
+//     ) {
+//       if (
+//         confirm(
+//           'You heal yourself. You see a hostile orc in the room. Do you attack? (Ok for yes/Cancel for no)'
+//         ) === true
+//       ) {
+//         if (
+//           confirm(
+//             'You defeat the orc. There is a prince held prisoner in the room. Do you free him? (Ok for yes/Cancel for no)'
+//           ) === true
+//         ) {
+//           alert(
+//             'The prince is freed and rewards you. But he returns to becoming a tyrant to the kingdom. Good for you.'
+//           )
+//         } else {
+//           alert(
+//             'You leave the prince to die and leave. The kingdom descends into anarchy. Good for you.'
+//           )
+//         }
+//       } else {
+//         if (
+//           confirm(
+//             'The orc is confused by your unwillingness to attack. Do you seek to reason with her? (Ok for yes/Cancel for no)'
+//           ) === true
+//         ) {
+//           alert(
+//             'You both parley and begin to understand each other. You connect your thoughts, feelings, and aspirations. You become friends. You win.'
+//           )
+//         } else {
+//           alert('You decide to keep fighting and both ending up dying.')
+//         }
+//       }
+//     } else {
+//       alert('You die.')
+//     }
+//     break
+//   case 2:
+//     let dampRoom = prompt(
+//       'You enter the damp room and see a pool of water. Do you (A) drink the water, (B) flip the switch by the pool, or (C) talk to the magic goldfish swimming in the pool? (A/B/C)'
+//     )
+//     switch (dampRoom) {
+//       case 'A':
+//         alert('The water was poisoned, you die')
+//         break
+//       case 'B':
+//         alert(
+//           'The pool drains to reveal treature and loot, and dead magic koi fish. You are now rich and win life'
+//         )
+//         break
+//       case 'C':
+//         alert(
+//           'The magic koi convinces you to not flip the switch, and give you the treasure and loot hidden in the pool. You are now rich, benevolent, and win.'
+//         )
+//         break
+//     }
+//     break
+//   case 3:
+//     let freshRoom = prompt(
+//       'You enter the fresh door and unknowingly pass through a magoc portal. You are transformed into a magical talking koi fish and now live in a pool of water. What is your koi name?'
+//     )
+//     alert(`Welcome to your new forever life, ${freshRoom}!`)
+//     break
+//   default:
+//     alert(
+//       'You do not go further into the dungeon. You leave, never to return. You will always regret this choice.'
+//     )
+// }
+
+const dungeonDan = () => {
+  let playerName = prompt('Choose your own adventure! Please enter your name')
+  alert(`Welcome to the dungeon, ${playerName}`)
+
+  let enter = parseInt(
+    prompt(
+      'You enter the dungeon and see three doors. Which one will you enter? Door 1 seems dark. Door 2 smells damp. Door 3 smells fresh. (1/2/3)'
+    ),
+    10
+  )
+  switch (enter) {
+    case 1:
+      if (
+        confirm(
+          'You enter the dark room. You are attacked in the dark and hurt. Do you drink your healing potion? (Ok for yes/Cancel for no)'
+        ) === true
+      ) {
+        if (
+          confirm(
+            'You heal yourself. You see a hostile orc in the room. Do you attack? (Ok for yes/Cancel for no)'
+          ) === true
+        ) {
+          if (
+            confirm(
+              'You defeat the orc. There is a prince held prisoner in the room. Do you free him? (Ok for yes/Cancel for no)'
+            ) === true
+          ) {
+            alert(
+              'The prince is freed and rewards you. But he returns to becoming a tyrant to the kingdom. Good for you.'
+            )
+          } else {
+            alert(
+              'You leave the prince to die and leave. The kingdom descends into anarchy. Good for you.'
+            )
+          }
+        } else {
+          if (
+            confirm(
+              'The orc is confused by your unwillingness to attack. Do you seek to reason with her? (Ok for yes/Cancel for no)'
+            ) === true
+          ) {
+            alert(
+              'You both parley and begin to understand each other. You connect your thoughts, feelings, and aspirations. You become friends. You win.'
+            )
+          } else {
+            alert('You decide to keep fighting and both ending up dying.')
+          }
+        }
+      } else {
+        alert('You die.')
+      }
+      break
+    case 2:
+      let dampRoom = prompt(
+        'You enter the damp room and see a pool of water. Do you (A) drink the water, (B) flip the switch by the pool, or (C) talk to the magic goldfish swimming in the pool? (A/B/C)'
+      )
+      switch (dampRoom) {
+        case 'A':
+          alert('The water was poisoned, you die')
+          break
+        case 'B':
+          alert(
+            'The pool drains to reveal treature and loot, and dead magic koi fish. You are now rich and win life'
+          )
+          break
+        case 'C':
+          alert(
+            'The magic koi convinces you to not flip the switch, and give you the treasure and loot hidden in the pool. You are now rich, benevolent, and win.'
+          )
+          break
+      }
+      break
+    case 3:
+      let freshRoom = prompt(
+        'You enter the fresh door and unknowingly pass through a magoc portal. You are transformed into a magical talking koi fish and now live in a pool of water. What is your koi name?'
+      )
+      alert(`Welcome to your new forever life, ${freshRoom}!`)
+      break
+    default:
+      alert(
+        'You do not go further into the dungeon. You leave, never to return. You will always regret this choice.'
+      )
+  }
+}
+dungeonDan()
+const playAgain = confirm('Do you want to rethink your choices and play again?')
+if (playAgain === true) {
+  dungeonDan()
+}
