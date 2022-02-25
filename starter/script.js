@@ -10,15 +10,13 @@ const game = () => {
   let pathChoice = prompt(
     'Would you like to go down the first (1) path or the second (2)?'
   )
-  const one = parseInt('1', 10)
-  const two = parseInt('2', 10)
 
   // const forkedPath = () => {
-  if (pathChoice === one) {
+  if (parseInt(pathChoice) === 1) {
     alert(
       "You've come to Psychic River where the water reflects your future ..."
     )
-  } else if (pathChoice === two) {
+  } else if (parseInt(pathChoice) === 2) {
     alert("You've reached Mermaid Lake ...")
   } else {
     alert("Hmm. I'm not familiar with this place. Try again.")
@@ -31,11 +29,11 @@ const game = () => {
   stayCont.toLowerCase
 
   if (stayCont === 's') {
-    if (pathChoice === one) {
+    if (pathChoice === '1') {
       alert(
         'Oh no, your reflection pulled you into the future! No going back now ...'
       )
-    } else if (pathChoice === two) {
+    } else if (pathChoice === '2') {
       alert(
         "The mermaids have lured you into the underwater cavern, Crystal Cave! Oh, well. At least there's treasure..."
       )
