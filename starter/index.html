@@ -1,12 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-</head>
-<body>
-  
-  <h1>Choose your own adventure!</h1>
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Choose Your Drink</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="heading">The Bar Is Open</h1>
+      <img src="./logo.jpeg" alt="logo">
+    </header>
+    <div id="drinkMenu">
+      <p id="clickDrink">Click the type of drinks you want</p>
+      <ul id="drinksList">
+        <li class="types"><input type="button" class="drinkType" value="beer"></li>
+        <li class="types"><input type="button" class="drinkType" value="cocktails"></li>
+        <li class="types"><input type="button" class="drinkType" value="wine"></li>
+        <li class="types"><input type="button" class="drinkType" value="feeling lucky"></li>
+      </ul>
+    </div>
+    <div id="drinkPref">
+      <p id="prefText">Enter your drink preference</p>
+      <input id="userEnt" type="text">
+      
+    </div>
+    <div id="selectDrink">
+      <div class="drinks">
+        <div class="finalDrink">
+      
+        </div>
+        <div class="finalDrink">
+          
+        </div>
+      </div>
+      
+    </div>
+    <p id="drinkLabel"></p> 
+    <input type="button" value="Another Drink" id="reset">
+  </body>
 </html>

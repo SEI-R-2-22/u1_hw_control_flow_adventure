@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+  height: 100vh;
+  align-items: center;
+  justify-items: center;
+}
+
+header {
+  grid-column: 2 / 3;
+  text-align: center;
+  justify-content: center;
+}
+
+#heading {
+  height: 100px;
+  margin-top: 20px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  /* border: 1px solid red; */
+}
+
+#drinkMenu {
+  text-align: center;
+  font-size: 2em;
+}
+
+#drinkMenu p {
+  margin: 20px;
+}
+
+#drinkMenu {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+
+#drinksList {
+  list-style: none;
+  display: flex;
+}
+
+.types {
+  margin: 0 20px;
+}
+
+.drinkType {
+  padding: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#drinkPref {
+  display: none;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+
+  text-align: center;
+}
+
+#drinkPref p {
+  margin: 0 0 30px 0;
+  font-size: 1.2em;
+}
+
+#drinkPref input {
+  line-height: 2em;
+}
+
+#selectDrink {
+  display: none;
+  grid-column: 1 / 4;
+  grid-row: 4 / 6;
+  text-align: center;
+  height: 100%;
+}
+
+#selectDrink div {
+  display: flex;
+  height: 100%;
+  width: 100vw;
+  border: 1px black solid;
+}
+
+#finalDrink {
+  background-size: 200px 100px cover;
+}
+
+#drinkLabel {
+  align-self: start;
+  grid-row: 6 / 7;
+  grid-column: 2 / 3;
+}
+#reset {
+  display: none;
+  margin: 50px;
+  grid-row: 6 / 7;
+  grid-column: 2 / 3;
+}
