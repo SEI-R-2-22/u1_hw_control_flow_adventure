@@ -1,0 +1,22 @@
+body {
+    background-color: green;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h3 {
+   text-align: center;
+   color: white;
+}
+
+#start {
+    display: block;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: gold;
+    border-color: gold;
+    color: brown;
+}
