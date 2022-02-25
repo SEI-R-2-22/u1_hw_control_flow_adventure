@@ -34,7 +34,7 @@ const thirdChoice = (playerChoice) => {
       "You step through the door onto a mountain top; green everywhere.  The air is damp and cool.  The door is gone. Type '1' to start hiking down. Type '2' to take a seat and admire the view."
     );
     playerChoice = parseInt(playerChoice);
-    secondChoice(playerChoice);
+    mountainChoice(playerChoice);
   } else if (playerChoice === 2) {
     let playerChoice = prompt(
       "You are frozen in shock a while and eventually you try to stand up and pass out.  Suddenly you awake in bed.  It is a normal Saturday and continues as such.  You dream of the room and elephants every night going forward. The End. Type anything to start again."
@@ -42,9 +42,39 @@ const thirdChoice = (playerChoice) => {
     gameBegins();
   }
 };
-//const lazyChoice = (playerChoice) => {};
+const lazyChoice = (playerChoice) => {
+  if (playerChoice === 1) {
+    firstChoice(playerChoice);
+  } else if (playerChoice === 2) {
+    let playerChoice = prompt(
+      "Did I mention how comfortable you are?  You are very pleased with your current situation and think you might even catch a nap. The smarter thing to do would be to figure out where ‘here’ is. Or at least pull the string. Type '1' to pull the string. Type '2' to do nothing"
+    );
+    playerChoice = parseInt(playerChoice);
+    if (playerChoice === 1) {
+      firstChoice(playerChoice);
+    } else if (playerChoice === 2) {
+      let playerChoice = prompt(
+        "You continue to be absurdly comfortable for an uncertain amount of time and you eventually expire.  The End. Type anything to start again."
+      );
+      gameBegins();
+    } else gameBegins();
+  }
+};
 
-//const secondChoiceB = (playerChoice) => {};
+const mountainChoice = (playerChoice) => {
+  if (playerChoice === 1) {
+    let playerChoice = prompt(
+      "You hike for what feels like an hour when you see a massive village built into the treetops.  You notice it is oddly quiet.  Where are all the people?  You walk close to the village and see a basket attached to a fancy rope and pulley mechanism.  The ropes lead to a platform area above. Type '1' to get in the basket and try to make this work. Type '2' if you think it's too dangerous."
+    );
+    playerChoice = parseInt(playerChoice);
+    secondChoice(playerChoice);
+  } else if (playerChoice === 2) {
+    let playerChoice = prompt(
+      "The clouds captivate you as they swirl around nearby peaks.  You try to keep an eye on clouds heading towards you, but as they get close they become too nebulous to make out. You hear a bird call, close, and turn too quickly.  You reach out a hand to steady yourself but nothing meets it. You tumble. You die. The End. Type anything to start again."
+    );
+    gameBegins();
+  }
+};
 
 const gameBegins = () => {
   let playerChoice = prompt(
