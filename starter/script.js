@@ -15,7 +15,7 @@ const firstChoice = (playerChoice) => {
     lazyChoice(playerChoice);
   }
   //  else if(playerChoice ===0){}
-  else gameBegins();
+  else location.reload();
 };
 
 const secondChoice = (playerChoice) => {
@@ -25,7 +25,7 @@ const secondChoice = (playerChoice) => {
     );
     playerChoice = parseInt(playerChoice);
     thirdChoice(playerChoice);
-  } else gameBegins();
+  } else location.reload();
 };
 
 const thirdChoice = (playerChoice) => {
@@ -39,7 +39,7 @@ const thirdChoice = (playerChoice) => {
     let playerChoice = prompt(
       "You are frozen in shock a while and eventually you try to stand up and pass out.  Suddenly you awake in bed.  It is a normal Saturday and continues as such.  You dream of the room and elephants every night going forward. The End. Type anything to start again."
     );
-    gameBegins();
+    location.reload();
   }
 };
 const lazyChoice = (playerChoice) => {
@@ -56,8 +56,8 @@ const lazyChoice = (playerChoice) => {
       let playerChoice = prompt(
         "You continue to be absurdly comfortable for an uncertain amount of time and you eventually expire.  The End. Type anything to start again."
       );
-      gameBegins();
-    } else gameBegins();
+      location.reload();
+    } else location.reload();
   }
 };
 
@@ -72,7 +72,7 @@ const mountainChoice = (playerChoice) => {
     let playerChoice = prompt(
       "The clouds captivate you as they swirl around nearby peaks.  You try to keep an eye on clouds heading towards you, but as they get close they become too nebulous to make out. You hear a bird call, close, and turn too quickly.  You reach out a hand to steady yourself but nothing meets it. You tumble. You die. The End. Type anything to start again."
     );
-    gameBegins();
+    location.reload();
   }
 };
 
@@ -87,7 +87,7 @@ const villageChoice = (playerChoice) => {
     let playerChoice = prompt(
       "As you turn to step away from the basket contraption you hear a creaking and then a loud snap.  Looking up you meet your maker who happens to look a lot like a tree branch. The End. Type anything to start again."
     );
-    gameBegins();
+    location.reload();
   }
 };
 
