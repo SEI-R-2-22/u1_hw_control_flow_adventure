@@ -3,6 +3,7 @@ let blood
 let fav
 let secret
 let doll = 0
+let intYear
 const callIntro = () => {
   alert(
     'After an unusually long day, you finally lay your head to rest. Before even a moment goes by, you can feel yourself slipping away.'
@@ -109,6 +110,7 @@ const tryAgain = () => {
       callIntro()
       break
     case 'n':
+      tryAgain()
       break
     default:
       tryAgain()
@@ -244,8 +246,84 @@ const enterDoctor = () => {
   let birthYear = prompt('What year were you born?')
   let intYear = parseInt(birthYear, 10)
   if (intYear >= 1990) {
-    alert('Woah, your a baby! Kids today are so picky...')
+    alert(`"Woah ${intYear}?, your a baby! Kids today are so picky..."`)
+    gainMedicine()
+  } else {
+    alert(
+      `"Woah, ${intYear}? You are a boomer!  Boomers today are so picky..."`
+    )
+    gainMedicine()
   }
+}
+const gainMedicine = () => {
+  if (intYear >= 1990) {
+    alert('Obtained Green Pill! (Medicine for younguns)')
+  } else {
+    alert('Obtained Polka Dot Pill! (Medicine for olduns)')
+  }
+  alert(
+    `"Oh, and by the way:  It isn't a good idea to go around telling strangers secrets. I heard that you are that person going around saying ${secret}.  Messed up stuff dude.`
+  )
+  takeMedicine()
+}
+const takeMedicine = () => {
+  let pillPrompt = prompt(
+    'Would you like to take the pill the doctor gave you? (y/n)'
+  )
+  switch (pillPrompt) {
+    case 'y':
+      deadEnding()
+      break
+    case 'n':
+      payDoctor()
+      break
+    default:
+      takeMedicine()
+      break
+  }
+}
+
+const payDoctor = () => {
+  alert(
+    `You know, ${name}, you're pretty smart for not taking that. You still have to pay for it though...`
+  )
+  let payPrompt = prompt(`What do you do? ([p]ay / [d]on't pay)`)
+  if (payPrompt === 'p' && doll > 0) {
+    trueEnding()
+  } else if (payPrompt === 'p' && doll <= 0) {
+    alert('You dont have any money to pay...')
+  }
+  alert(
+    '"What?! you wont pay?? You are aware that money makes the world go round, right?!"'
+  )
+  alert(
+    'The doctor quickly pulls a syringe from his pocket and injects a clear liquid into your neck'
+  )
+  alert(`"Goodbye, ${name}..."`)
+  deadEnding()
+}
+const trueEnding = () => {
+  alert('You hand the doctor the Ragged Doll.')
+  alert('...')
+  alert('"Oh.."')
+  alert('"My..."')
+  alert('"LORD!!!"')
+  alert(
+    '"I have wanted one of these since I was a child! Where did you find it?!"'
+  )
+  let wherePrompt = prompt('Where did you find it?')
+  alert(
+    `"${wherePrompt}...? That's crazy!! Regardless, allow me to thank you..."`
+  )
+  alert(
+    'The eccentric doctor pulls a syringe with clear liquid from his labcoat and injects it into your neck.'
+  )
+  alert(
+    '"You are lucid.  You have control over this world now.  Come and go as you please... You can be whoever / whatever you want here...'
+  )
+  alert('The End...')
+  alert('...')
+  tryAgain()
 }
 
 const enterLiminalSpace = () => {
