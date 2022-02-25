@@ -71,7 +71,7 @@ const shoulderTap = () => {
 }
 const turnAround = () => {
   alert(
-    'A lanky man dressed in a 1960s-style slick suit stares down at you.  Hes sporting a blindfold and michevious grin.  "Hello there :)"'
+    'A lanky man dressed in a slick gray suit stares down at you.  Hes sporting a blindfold and michevious grin.  "Hello there :)"'
   )
   let yesNoSecrets = prompt('"Do you like secrets? :)" [y/n]')
   switch (yesNoSecrets) {
@@ -210,6 +210,44 @@ const ballCurl = () => {
   )
   enterMeatBall()
 }
+const enterMeatBall = () => {
+  alert(
+    'You look around and see the ground beneath you.  You look up and see that a tentacle is pulling you up into a giant oblong of twisted flesh and meat.'
+  )
+  alert('The tentacle pulls you into an orifice')
+  alert(
+    'Through the orifice, you are disposed of into a small hospital waiting room'
+  )
+  waitingRoomCall()
+}
+const waitingRoomCall = () => {
+  alert(
+    'After waiting for what felt like hours, a voice rings out over a PA system'
+  )
+  alert(`${name}, the doctor will see you now!`)
+  alert('...')
+  alert('It seems you have no choice but to get up and see the doctor...')
+  alert(
+    'You walk through a door and through a hallway to an examining room.  Everything seems normal...'
+  )
+  alert('You sit on the examining table and wait for the doctor to enter.')
+  alert('...')
+  alert(
+    'After a few minutes, you hear a knock at the door.  A small balding man in a white lab coat enters the room.  He is smoking a cigarette.'
+  )
+  enterDoctor()
+}
+const enterDoctor = () => {
+  alert(
+    `Ah yes, Mr (Mrs?) ${name}... Bloodtype ${blood}... How old did you say you were?`
+  )
+  let birthYear = prompt('What year were you born?')
+  let intYear = parseInt(birthYear, 10)
+  if (intYear >= 1990) {
+    alert('Woah, your a baby! Kids today are so picky...')
+  }
+}
+
 const enterLiminalSpace = () => {
   alert(
     'Surrounded by cardboard bricks, you find yourself in a large, artificially lit, carpeted room (Any room is better than the blizzard). The only things in the large room are support pillars.'
@@ -288,10 +326,10 @@ const tortFight = () => {
 }
 const happyEnding = () => {
   alert(
-    'Suddenly, you find yourself in your bedroom.  You realize you awoke with a massive grin on your face'
+    'Suddenly, you find yourself in your bedroom.  You realize you woke up with a massive grin on your face'
   )
   alert(
-    'You woke up for work with time to spare! You get shower, get dressed, then look in the mirror.  Strange: You realize you have not stopped grinning since you woke up.'
+    'Youre up for work with time to spare! You shower, get dressed, then look in the mirror.  Strange: You realize you have not stopped grinning since you woke up.'
   )
   tryAgain()
 }
