@@ -18,7 +18,7 @@ let storyContinuation = true; // to continue the story unless the user decides n
 let answer; // used to answer if user wants to replay the game or not
 let numberDecision = 0; // for yes or no questions that require a number
 let yesLetterDecision = "Y"; // for yes or no questions that require a letter
- // for dice game in path 3
+let Number = Math.floor(Math.random() * 6 + 1); // used in paths 2 & 3
 while (storyContinuation === true){
     alert("As you woke up in the dark eerie forest,"
     + " confused and afraid on how you ended up being here, you notice there are 3 available paths around you. ");
@@ -32,6 +32,53 @@ while (storyContinuation === true){
 
     if (path === 1){
     } else if (path === 2){
+        alert("Without looking back, you continued on path 2 and ventured into the dark tunnel.");
+        alert("Walking in the tunnel for about a good 10 minutes now, you hear barking noises behind you, and it seems to get more and more louder…");
+        decision = prompt("Do you turn back and find out what that noise is or continue deeper into the tunnel?(Enter 1 for the first option or 2 for the second)");
+        if (parseInt(decision) === 1){
+            alert("You turned back around and saw what seems to be rabid dogs running towards you! You tried running away but it was already too late to avoid them!");
+            gameFailureEnd();
+            answer = prompt("Would you like to restart the game?(Y/N)")
+            if (answer === 'N'){
+                break;
+            }
+        } else {
+            alert("You continued into the tunnel, this time at a quicker pace to outrun those barking noises behind you and after a couple of minutes, the noises were gone.");
+            alert(`Moments after, you hear your noises behind you again, this time it sounded like someone calling out your name, ${name}`);
+            decision = prompt("Do you turn back and find out who is calling you or continue deeper into the tunnel?(Enter 1 for the first option or 2 for the second)");
+            if (parseInt(decision) ===1){
+                alert("You turned back around and headed to the direction where you heard your name being called out." 
+                + " Confused, you reached to a point that you realized that you had walk back to where you first started on path 2 and when you turned around the tunnel disappeared.");
+                alert("You started going crazy and did not have the mentality to continue looking for a way out of the forest");
+                gameFailureEnd();
+                answer = prompt("Would you like to restart the game?(Y/N)")
+                if (answer === 'N'){
+                    break;
+                }
+            } else {
+                alert("You ignored the sound of your name and finally stumbled some kind of wall blocking your path, and through the small cracks of the wall you can see sunlight! THis is your way out!");
+                alert("The wall then started talking!");
+                alert("The magical wall asked to guess a random number from 1 to 6, and if you guess what number the magical wall is thinking, the magical wall will crumble and you win the adventure game!");
+                alert("However, if you guess wrong, you lose the adventure game!");
+                alert("You thought to yourself that it's an unfair percentage of winning, but hey... you were the one who chose path 2");
+                alert(`You guessed the number ${Number} and the magical wall revealed his number to be ` + 3);
+                if (Number !== 3){
+                    gameFailureEnd();
+                    answer = prompt("Would you like to restart the game?(Y/N)")
+                    if (answer === 'N'){
+                        break;
+                    }
+                } else {
+                    gameSuccessfulEnd();
+                    answer = prompt("Would you like to restart the game?(Y/N)")
+                    if (answer === 'N'){
+                        break;
+                    }
+                }
+            }
+        }
+
+
     } else if (path === 3){
         alert("Trusting that the visible entity you see from a distance will help you with your journey to get our of the forest, you chose to go on path 3");
         alert("As you get closer, you notice that some vines are blocking your way.");
@@ -63,8 +110,7 @@ while (storyContinuation === true){
                 +" However, if you do not roll any of those values, you will lose the entire adventure game.'");
                 yesLetterDecision = prompt("Hearing that, you nervously think about it to yourself and consider if you wanted to play this risky game. Do you play the game with the mysterious man? (Y/N)");
                 if (yesLetterDecision){
-                    let diceNumber = Math.floor(Math.random() * 6 + 1);
-                    alert("You began to roll the dice and got the number " + diceNumber);
+                    alert("You began to roll the dice and got the number " + Number);
                     switch(diceNumber){
                         case 1: case 3: case 5:
                             gameFailureEnd();
