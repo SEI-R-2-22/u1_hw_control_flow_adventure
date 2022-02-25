@@ -110,6 +110,9 @@ const tryAgain = () => {
       break
     case 'n':
       break
+    default:
+      tryAgain()
+      break
   }
 }
 
@@ -268,7 +271,7 @@ const tortFight = () => {
         'You jump out of the way and the tortoise smashes into one of the support pillars.'
       )
       alert(
-        'The room begins to come crumbling down, burying the tortoise and you as well.'
+        'The room begins to come crumbling down, burying the tortoise. You look up and see debris falling toward your face.'
       )
       neutralEnding()
       break
@@ -283,9 +286,39 @@ const tortFight = () => {
       break
   }
 }
-const happyEnding = () => {}
-const sadEnding = () => {}
-const neutralEnding = () => {}
+const happyEnding = () => {
+  alert(
+    'Suddenly, you find yourself in your bedroom.  You realize you awoke with a massive grin on your face'
+  )
+  alert(
+    'You woke up for work with time to spare! You get shower, get dressed, then look in the mirror.  Strange: You realize you have not stopped grinning since you woke up.'
+  )
+  tryAgain()
+}
+const sadEnding = () => {
+  alert(
+    'You feel tears welling up in your eyes.  The tears start streaming down your face and soak the pillow beneath your head.'
+  )
+  alert(
+    'You are awake and safe in your bed!  You wipe away your tears and reflect on your childhood before getting ready to go to work.'
+  )
+  tryAgain()
+}
+const neutralEnding = () => {
+  alert(
+    'You jolt up out of bed and realize you were just having a strange dream'
+  )
+  alert(
+    'You glance at the clock and realize you dont have to get ready for work for another few hours.'
+  )
+  tryAgain()
+}
+const deadEnding = () => {
+  alert(
+    'You suddenly wake up in your bed with extreme chest pain and numbness.  You realize something is not right.  Your last thoughts are of your childhood home and the grinning man...'
+  )
+  tryAgain()
+}
 callIntro()
 // askName()
 // askFav()
