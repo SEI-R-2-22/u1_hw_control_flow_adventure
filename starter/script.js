@@ -11,9 +11,20 @@ const phoneAFriend = `
   [G]rond.
 `;
 
+const knockOptions = `
+  [L]ie.
+  [T]ell the truth.
+  "Land-[S]hark."
+`;
+
+
 const grondQuote = `The drums rolled louder. Fires leaped up. Great engines crawled across the field; a huge ram, great as a forest-tree a hundred feet in length, swinging on mighty chains. Long had it been forging in the dark smithies of Mordor, and its hideous head, founded of black steel, was shaped in the likeness of a ravening wolf; on it spells of ruin lay. Grond they named it, in memory of the Hammer of the Underworld of old. Great beasts drew it, orcs surrounded it, and behind walked mountain-trolls to wield it.
 
 ...The drums rolled and rattled. With a vast rush Grond was hurled forward by huge hands. It reached the Gate. It swung. A deep boom rumbled through the City like thunder running in the clouds.`;
+
+
+
+
 
 // ********* STORY BEGINS HERE *************** //
 
@@ -59,11 +70,33 @@ if (whichHouse.toLowerCase() === "straw" || whichHouse.toLowerCase() === "s") {
     // STRAW > KNOCK POLITELY
   } else if (houseAction.toLowerCase() === "k") {
   
-    const knockResponse = prompt();
+    const knockResponse = prompt(`Interesting ploy. Very direct. 
+    
+    The piggy calls "who is it?" What is your reply?
+    ${knockOptions}`);
+
+        // BRICK > KNOCK > LIE
+        if (knockResponse.toLowerCase() == "l") {
+
+        } 
+        
+        // BRICK > KNOCK > TRUTH
+        else if (knockResponse.toLowerCase() == "t") {
+    
+        }
+        // BRICK > KNOCK > LANDSHARK
+        else if (knockResponse.toLowerCase() == "s") {
+    
+        } else alert("sorry, something went wrong.");
+    
+      } 
+    
   
-    // STRAW > CALL FOR HELP
-  } else if (houseAction.toLowerCase() === "c") {   
-    const whoYouGonnaCall = prompt(`Teamwork makes the dream work. Who you gonna call?
+  } 
+  
+  // STRAW > CALL FOR HELP
+  else if (houseAction.toLowerCase() === "c") {   
+    const whoYouGonnaCall = prompt(`Ah, the old "Phone a friend" lifeline. Alright, teamwork makes the dream work. Who you gonna call?
     
     ${phoneAFriend}`);
 
@@ -119,9 +152,33 @@ else if (whichHouse.toLowerCase() === "sticks" || whichHouse.toLowerCase() === "
   // STICKS > KNOCK POLITELY
   else if (houseAction.toLowerCase() === "k") {   // Knock politely
 
+    const knockResponse = prompt(`Interesting ploy. Very direct. 
+    
+    The piggy calls "who is it?" What is your reply?
+    ${knockOptions}`);
+
+    // STICKS > KNOCK > LIE
+    if (knockResponse.toLowerCase() == "l") {
+
+    } 
+    
+    // STICKS > KNOCK > TRUTH
+    else if (knockResponse.toLowerCase() == "t") {
+
+    }
+    // STICKS > KNOCK > LANDSHARK
+    else if (knockResponse.toLowerCase() == "s") {
+
+    } else alert("sorry, something went wrong.");
+
   } 
-  // STICKS > call for help
+
+  } 
+  // STICKS > CALL FOR HELP
   else if (houseAction.toLowerCase() === "c") {   // call for help
+    const whoYouGonnaCall = prompt(`Ah, the old "Phone a friend" lifeline. Alright, teamwork makes the dream work. Who you gonna call?
+    
+    ${phoneAFriend}`);
 
     if (whoYouGonnaCall.toLowerCase() == "f") {
       alert(`You ring the great Fire Lord Ozai, who loves nothing more than to set this little house ablaze.  
@@ -135,9 +192,7 @@ else if (whichHouse.toLowerCase() === "sticks" || whichHouse.toLowerCase() === "
       Better luck next time.`); // END CONDITION !!
     }
 
-
   } else alert("sorry, that wasn't an option.");
-
 
 } // end elseif stickHouse
 
@@ -169,10 +224,32 @@ else if (whichHouse.toLowerCase() === "brick" || whichHouse.toLowerCase() === "b
   // BRICK > KNOCK POLITELY
   else if (houseAction.toLowerCase() === "k") {   
 
+    const knockResponse = prompt(`Interesting ploy. Very direct. 
+    
+    The piggy calls "who is it?" What is your reply?
+    ${knockOptions}`);
+
+    // BRICK > KNOCK > LIE
+    if (knockResponse.toLowerCase() == "l") {
+
+    } 
+    
+    // BRICK > KNOCK > TRUTH
+    else if (knockResponse.toLowerCase() == "t") {
+
+    }
+    // BRICK > KNOCK > LANDSHARK
+    else if (knockResponse.toLowerCase() == "s") {
+
+    } else alert("sorry, something went wrong.");
+
   } 
 
   // BRICK > CALL FOR HELP
   else if (houseAction.toLowerCase() === "c") {   
+    const whoYouGonnaCall = prompt(`Ah, the old "Phone a friend" lifeline. Alright, teamwork makes the dream work. Who you gonna call?
+    
+    ${phoneAFriend}`);
 
     if (whoYouGonnaCall.toLowerCase() == "g") {
       alert(`As night falls... 
@@ -181,16 +258,16 @@ else if (whichHouse.toLowerCase() === "brick" || whichHouse.toLowerCase() === "b
       
       Snooty little pig didn't see THAT one coming!
       
-      You feast on all the little pigs in the castle. (You do have to share with the orcs, though.)`); //// WIN CONDITION !!!
+      You feast on all the little pigs in the castle. (You do have to share with the orcs, though.)
+      
+      You are one well-fed wolf! Congrats!`); //// WIN CONDITION !!!
     }
     // STRAW > CALL > NOT HOME
     else {
-      alert(`It rings and rings, but no one answers. Maybe you got the wrong number? Maybe they're screening their calls? Either way, you've wasted too much time. The little pig spotted you and vamoosed. 
+      alert(`It rings and rings, but no one answers. Maybe you got the wrong number? Maybe they're screening their calls? Either way, you've wasted too much time. The little pig spotted you, and their guards were able to capture you and throw you in the dungeon. 
       
-      Better luck next time.`); // END CONDITION !!
+      Maybe for the next adventure you have to escape the dungeon, but for now. Game over. Better luck next time.`); // END CONDITION !!
     }
-
-
   } else alert("sorry, that wasn't an option.");
 
 } // end elseif brickHouse

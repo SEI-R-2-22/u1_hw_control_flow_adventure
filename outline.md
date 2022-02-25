@@ -20,11 +20,12 @@
           - (>3) : Overkill much? You blow the house down, but you also hyperventilate. The piggy escapes. 
       - [K]nock politely on the door.
         - Interesting ploy. The piggy calls "who is it?" What is your reply?
-          - [F]ib. "It's Red Riging Hood! I brought snacks from Grandmother's house!"
+          - [F]ib. 
+            - "It's Red Riging Hood! I brought snacks from Grandmother's house!"
             - "That's not Red's voice!" cries the piggy. It scarpers out the back and escapes. Nice try.
           - [T]ell the Truth: "It' the big bad wolf, and I would like to eat you, please!"
             - Predictably, the piggy is not excited to see you. "Aaahhh!" It yells, as it runs out the back, and escapes. No dinner for you. 
-          - [L]and-Shark.
+          - [C]andy gram.
             - "What?" the piggy says. It opens the door. You gobble it up. I cannot believe that worked. 
       - [W]ait until dark. 
         - You ring up you old pal Rumpelstiltskin, who works through the night spinning the straw into gold. By morning, you've completely forgotten about the piggy and instead use your new-found treasure to feast at the local BBQ joint. Win Win.
