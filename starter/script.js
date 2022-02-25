@@ -76,6 +76,21 @@ const mountainChoice = (playerChoice) => {
   }
 };
 
+const villageChoice = (playerChoice) => {
+  if (playerChoice === 1) {
+    let playerChoice = prompt(
+      "The pulley mechanism is well made, it takes you little effort to pull yourself up to the platform. Type '1' to explore the village. Type '2' to take a breather. Type '3' to yell for someone."
+    );
+    playerChoice = parseInt(playerChoice);
+    finalChoice(playerChoice);
+  } else if (playerChoice === 2) {
+    let playerChoice = prompt(
+      "As you turn to step away from the basket contraption you hear a creaking and then a loud snap.  Looking up you meet your maker who happens to look a lot like a tree branch. The End. Type anything to start again."
+    );
+    gameBegins();
+  }
+};
+
 const gameBegins = () => {
   let playerChoice = prompt(
     "You awake in what feels like a comfortable chair.  Your eyes seem to be failing you; you can’t see a thing! Something brushes across your face as you look around.  At first you are startled, but when you grasp the object you realize it’s a string hanging from above. Type '1' to pull the string.  Type '2' to do nothing."
