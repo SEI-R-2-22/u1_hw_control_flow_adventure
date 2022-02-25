@@ -1,4 +1,4 @@
-const game = () => {
+function game() {
   let playerName = prompt(
     'Hello there, I am the Mirror of Erised. What is your name?'
   )
@@ -116,7 +116,7 @@ const game = () => {
                     game()
                   }
                   break
-                case 'Chamber of Secret':
+                case 'Chamber of Secrets':
                   let chamberLocation = confirm(
                     'The diary was already destroyed in the Chamber of Secret'
                   )
@@ -167,4 +167,4 @@ const game = () => {
     alert('You are not Harry Potter. Please exit and begin game again')
   }
 }
-game()
+document.getElementById('startGame').onclick = game
