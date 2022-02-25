@@ -8,25 +8,27 @@ const embark = () => {
   if (numericAge < 2) {
     alert("You're just an infant!")
     let flavor = prompt(
-      'It is time to bake your very first birthday cake. Do you prefer rice pudding (R), mashed peas (P), or chocolate (C)?'
+      'It is time to bake your very first birthday cake! Do you prefer rice pudding (R), mashed peas (P), or chocolate (C)?'
     )
     while (flavor !== 'R' && flavor !== 'P' && flavor !== 'C') {
       flavor = prompt(
-        'Please enter the appropriate letter to choose the flavor of your cake!'
+        'Please enter the appropriate letter (R, P, or C) to choose the flavor of your cake!'
       )
     }
     switch (flavor) {
       case 'R':
-        alert('Head to the grocery store to buy some jars of Gerber baby food!')
+        alert(
+          'Yuck, rice pudding! Head to the grocery store to buy some jars of Gerber baby food.'
+        )
         break
       case 'P':
         const peasPreference = prompt(
-          'Ew, mashed peas! Do you prefer sugar snap peas (S) or regular peas (R)?'
+          'Ew, mashed peas! Do you prefer regular homegrown peas (R) or sugarsnap peas? (S)'
         )
         if (peasPreference === 'R') {
           alert('Head to your backyard garden!')
-        } else {
-          alert('Go to the grocery store!')
+        } else if (peasPreference === 'S') {
+          alert("Head to your local farm's vegetable patch!")
         }
         break
       case 'C':
@@ -34,16 +36,18 @@ const embark = () => {
           'Do you prefer milk chocolate (M) or dark chocolate (D)?'
         )
         if (chocolateChoice === 'M') {
-          alert("Buy some Hershey's chocolate for the cake!")
-        } else {
-          alert('Buy some Godiva chocolate for the cake!')
+          alert("Ok, buy some Hershey's chocolate for the cake!")
+        } else if (chocolateChoice === 'D') {
+          alert('Ok, buy some bittersweet Godiva chocolate for the cake!')
         }
         break
       default:
-        alert('Pick a cake flavor')
+        alert(
+          "Could not find that cake flavor. Let's go with a plain spongecake."
+        )
     }
   } else if (numericAge < 5) {
-    alert('You are a toddler!')
+    alert('You are a tantrum-throwing toddler!')
     let partyFavor = prompt(
       'It is time to pick party favors for your guests. Do you prefer toys (T) or books (B)?'
     )
@@ -52,14 +56,14 @@ const embark = () => {
     }
     if (partyFavor === 'T') {
       let toyChoice = prompt(
-        'Do you like building blocks (BB) or Lincoln logs (LL)?'
+        'Do you like building blocks (BB) or Barbie dolls (BD)?'
       )
       if (toyChoice === 'BB') {
         alert(
           'As a destructive toddler, you knocked over the tower of blocks in the toy store and broke them all.'
         )
-      } else {
-        alert('Your guests can build a cabin with toy Lincoln logs')
+      } else if (toyChoice === 'BD') {
+        alert('You gave your Barbie doll an unsightly haircut.')
       }
     } else if (partyFavor === 'B') {
       let bookChoice = prompt(
@@ -67,14 +71,14 @@ const embark = () => {
       )
       if (bookChoice === 'C') {
         alert(
-          'Unfortunately you are too young for Clifford since he runs away.'
+          'Unfortunately you are too young for Clifford. You will get upset since he runs away.'
         )
-      } else {
+      } else if (bookChoice === 'P') {
         alert('Paddington gets lost easily. You can help him find his way!')
       }
     }
   } else if (numericAge > 15) {
-    alert('You are a teenager or wise years beyond!')
+    alert('You are a teenager or well beyond those years!')
     let activity = prompt(
       'It is time to pick an activity for your guests. Do you prefer going to a movie (M) or out to dinner (D)?'
     )
@@ -91,12 +95,12 @@ const embark = () => {
       }
     } else if (activity === 'D') {
       let dinnerChoice = prompt(
-        'Do you prefer deli (D) or delicious Italian (I) fare?'
+        'Do you prefer deli (D) or delicious Italian fare (I)?'
       )
       if (dinnerChoice === 'D') {
         alert('Corned beef and pickles it is!')
       } else if (dinnerChoice === 'I') {
-        alert('Spaghetti and meatballs it is!')
+        alert('Ravioli and chicken parmesan it is!')
       }
     }
   } else {
@@ -110,5 +114,5 @@ startOver = prompt('Would you like to play again? Y/N')
 if (startOver === 'Y') {
   embark()
 } else {
-  alert('Bye for now!')
+  alert('Thanks for playing. Bye for now!')
 }
