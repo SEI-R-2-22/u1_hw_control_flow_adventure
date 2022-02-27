@@ -3,10 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+ 
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
-  <h1>Choose your own adventure!</h1>
+  <header>
+    <img id="mainImage" src="https://yusong.space/wp-content/uploads/2022/02/header-hp-overlay.png" alt="Harry's Adventure">
+  </header>
+
+
+  <div class="mainContent">
+
+    <button id="yourName" onclick="yourName()">Please Enter Your Name Before Start</button>
+    <p id="thank-you"></p>
+
+    <button id="playNow" onclick="playNow()">Play Now</button>
+    <p id="one"></p>
+    <p id="victory"></p>
+  </div>
+
   <script src="script.js"></script>
+
 </body>
 </html>
