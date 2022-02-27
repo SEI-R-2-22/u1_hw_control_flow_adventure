@@ -1,0 +1,34 @@
+body {
+    text-align: center;    
+    background-color: black;
+    color: white;
+    }
+    
+    #mainImage {
+        margin-top: 100px;
+        max-width: 800px;
+    }
+    
+    button {
+        font-size: 18px;
+        margin: 10px;
+        border-radius: 30px;
+        border: none;
+    }
+    
+    /* Botton on top */
+    #yourName {
+        background-image: linear-gradient(to top right, red, #D3A625);
+        padding: 25px 35px;
+        
+    }
+    
+    /* Second button */
+    
+    #playNow {
+        padding: 25px 140px;
+        background-image: linear-gradient(to bottom right, #D3a625, red);
+        font-weight: bold
+    }
+    
+    
