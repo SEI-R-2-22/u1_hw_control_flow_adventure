@@ -28,7 +28,7 @@ const bigMad = () => {
             replay();
             break;
         case 'lied':
-            alert("You lied on you tax forms? Oh that's no big deal, you'll be fine");
+            alert("You lied on you tax forms? Oh that's no big deal, you'll be fine, but...");
             replay();
             break;
         case 'cheated':
