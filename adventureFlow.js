@@ -49,16 +49,19 @@ const readyForAdventure = () => {
     }
 
     const runBrockLogic = () => {
-        promptStatement = 'A one-half Swedish, one-quarter Polish, one-quarter Winnebago "murder machine". What will you do today? \n ';
+        promptStatement = 'A one-half Swedish, one-quarter Polish, one-quarter Winnebago "murder machine". What will you do today? \n 1: Let\'s go for a joy ride! \n 2: Meal time.';
         let promptResponse = promptActions(promptStatement);
 
-        if (promptResponse.toString() === 1) {
-            promptStatement2 = 'You\'ve got a day off finally! What vehicle are you going to take for a joy ride: boat, plane car or time machine'
+        if (promptResponse.toString() === '1') {
+            promptStatement2 = 'You\'ve got a day off finally! What vehicle are you going to take for a joy ride: Boat, Plane, Car or Time machine'
             let promptResponse2 = promptActions(promptStatement2);
             if (promptResponse2.toLowerCase() === 'boat') alert('It\'s a great day for a boat ride. But before you take off you remember there were a few repairs you needed to make down in the cabin. It\'s not long and you notice that the boat is moving and you hear yelling above. Come to find out the boys had the same idea as you and took the boat out while you were in the cabin. Only problem is there were pirates trying to take the boys hostage. This wasn\'t happening on your watch; so, you mercilessly slaughter the pirates and take the boys back home.')
             if (promptResponse2.toLowerCase() === 'plane') alert('You jump into the X-1 and lift off. You\'re flying along and you feel something dinging at the plane. Then The Monarch flies up onto the windsheild. You turn on the wippers to shew him away. Flustered he flies off. You loop back around behind him and shoot him down. Leaving him to rue this day you fly your way off into the sunset.')
             if (promptResponse2.toLowerCase() === 'car') alert('You go to grab the keys to "Adrianne," only to find out someone\'s taken the keys to your beloved 1969 Dodge Charger. Furious with the anger of a 1000 hornets. You begin tracking down your precious car. It doesn\'t take you long and you see it. The right headlight smashed into a pole and a petrified Dean at the wheel. At least it\'s not totalled.')
             if (promptResponse2.toLowerCase() === 'time machine') alert('You\'ve always wanted to hunt down a T-Rex. So you set the machine for the Late Cretaceous period. You\'ve got your .700 Nitro Express elephant rifle and you\'re off. You spend hours tracking and finding a position to setup a blind. You find the perfect spot. As you\'re building your blind you feel the ground shaking. You\'re almost as excited as a school-boy but keep your nerves calm. You see the T-Rex approaching as you stay hidden. Since you don\'t beleive in using a gun you suprise the dino with your Bowie knife. The poor thing never saw it coming. You get back into the time machine with a T-Rex head as your trophy. You get back home and Dr. Venture is appalled at the site of your trophey and wants you to dispose of it. A sad day for Brock Samson.')
+            readyForAdventure();
+        } if (promptResponse.toString() === '2') {
+            alert('You\'ve eaten way to much and now you\'ve got the itis. You lay down and zonk out. When you wake up the day has been wasted.')
             readyForAdventure();
         }
     }
