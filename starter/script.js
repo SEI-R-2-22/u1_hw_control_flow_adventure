@@ -5,7 +5,7 @@ const playGame = () => {
   isPlayed = true
   const replayQ = () => {
     let isReplay = prompt(`Do you want to play? Y/N`)
-    if (isReplay === 'Y') {
+    if (isReplay === 'Y' || isReplay ==='y') {
       playGame()
     }
   }
@@ -67,7 +67,7 @@ const playGame = () => {
                 case 'H':
                 case 'h':
                   alert(
-                    `You trust in your new friend and you ride on until you are upon the warlock. Not knowing what to do you leap off the back of the centuar and land on the Warlock's back. The momentum of the tackle causing you and the warlock to tumble. Still holding onto the warlock you turn him to see that his face looks identical to the evil warlock. Your hand start shaking as you wonder what is going on. Suddenly, the warlock bursts into a white hot light as he screams. You did it! You don't know how or why, but the warlock was defeated. After a night of celebration you go to sleep. When you wake you find yourself in your bed at home. Around your neck you find a small medallion that your friend gave you. You know you've defeated the warlock and feel that you can take on any challenges.`
+                    `You trust in your new friend and you ride on until you are upon the warlock. Not knowing what to do you leap off the back of ${bestie} and land on the Warlock's back. The momentum of the tackle causing you and the warlock to tumble. Still holding onto the warlock you turn him to see that his face looks identical to t${warlockName}. Your hand start shaking as you wonder what is going on. Suddenly, the warlock bursts into a white hot light as he screams. You did it! You don't know how or why, but the warlock was defeated. After a night of celebration you go to sleep. When you wake you find yourself in your bed at home. Around your neck you find a small medallion that your friend gave you. You know you've defeated the warlock and feel that you can take on any challenges.`
                   );
                   break;
                 default:
@@ -104,7 +104,7 @@ const playGame = () => {
                 case 'H':
                 case 'h':
                   alert(
-                    `You trust in your new friend and you ride on until you are upon the warlock. Not knowing what to do you leap off the back of the centuar and land on the Warlock's back. The momentum of the tackle causing you and the warlock to tumble. Still holding onto the warlock you turn him to see that his face looks identical to the evil warlock. Your hand start shaking as you wonder what is going on. Suddenly, the warlock bursts into a white hot light as he screams. You did it! You don't know how or why, but the warlock was defeated. After a night of celebration you go to sleep. When you wake you find yourself in your bed at home. Around your neck you find a small medallion that your friend gave you. You know you've defeated the warlock and feel that you can take on any challenges.`
+                    `You trust in your new friend and you ride on until you are upon the warlock. Not knowing what to do you leap off the back of ${bestie} and land on the Warlock's back. The momentum of the tackle causing you and the warlock to tumble. Still holding onto the warlock you turn him to see that his face looks identical to t${warlockName}. Your hand start shaking as you wonder what is going on. Suddenly, the warlock bursts into a white hot light as he screams. You did it! You don't know how or why, but the warlock was defeated. After a night of celebration you go to sleep. When you wake you find yourself in your bed at home. Around your neck you find a small medallion that your friend gave you. You know you've defeated the warlock and feel that you can take on any challenges.`
                   )
                   break;
                 default:
@@ -141,7 +141,7 @@ const playGame = () => {
                 case 'H':
                 case 'h':
                   alert(
-                    `You trust in your new friend and you ride on until you are upon the warlock. Not knowing what to do you leap off the back of the centuar and land on the Warlock's back. The momentum of the tackle causing you and the warlock to tumble. Still holding onto the warlock you turn him to see that his face looks identical to the evil warlock. Your hand start shaking as you wonder what is going on. Suddenly, the warlock bursts into a white hot light as he screams. You did it! You don't know how or why, but the warlock was defeated. After a night of celebration you go to sleep. When you wake you find yourself in your bed at home. Around your neck you find a small medallion that your friend gave you. You know you've defeated the warlock and feel that you can take on any challenges.`
+                    `You trust in your new friend and you ride on until you are upon the warlock. Not knowing what to do you leap off the back of ${bestie} and land on the Warlock's back. The momentum of the tackle causing you and the warlock to tumble. Still holding onto the warlock you turn him to see that his face looks identical to t${warlockName}. Your hand start shaking as you wonder what is going on. Suddenly, the warlock bursts into a white hot light as he screams. You did it! You don't know how or why, but the warlock was defeated. After a night of celebration you go to sleep. When you wake you find yourself in your bed at home. Around your neck you find a small medallion that your friend gave you. You know you've defeated the warlock and feel that you can take on any challenges.`
                   )
                   break;
                 default:
